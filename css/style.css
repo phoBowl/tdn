@@ -1,0 +1,17 @@
+.slides-navigation .prev,
+.slides-navigation .next {
+  width: 47px;
+  height: 47px;
+  background-size: cover; /* the background will cover the whole width & height above */
+  background-repeat: no-repeat; /* make sure the images don't repeat */
+}
+
+.slides-navigation a.prev {
+  left: 20px;
+  background-image: url(../img/icons/back-button.png);
+}
+
+.slides-navigation a.next {
+  right: 20px;
+  background-image: url(../img/icons/next-button.png);
+}
