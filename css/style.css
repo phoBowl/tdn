@@ -157,3 +157,18 @@ body {
   margin-left: -20%;
   color: #444444;
 }
+
+.contactButton {
+  color: #ffffff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.contactButton:hover {
+  text-decoration: none;
+  color: #eb4d4b;
+  background-color: #ffffff;
+}
