@@ -72,3 +72,33 @@ body {
   background-color: #eb4d4b;
   color: #ffffff;
 }
+
+.skill {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.chart {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: inline-block;
+  text-align: center;
+}
+
+.chart canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.chart .percent {
+  color: #000000;
+  line-height: 152px;
+  display: inline-block;
+  font-size: 39px;
+}
+
+.chart .percent::after {
+  content: '%';
+}
