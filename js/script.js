@@ -1,11 +1,11 @@
-$(document).ready(() => {
+$(document).ready(function() {
   $('#slides').superslides({
     animation: 'fade',
     play: 5000
     // pagination: false
   })
 
-  let typed = new Typed('.typed', {
+  var typed = new Typed('.typed', {
     strings: [
       '...',
       'Junior Web Developer',
@@ -39,9 +39,9 @@ $(document).ready(() => {
     }
   })
 
-  let skillsTopOffset = $('.skillsSection').offset().top
-  let statsTopOffset = $('.statsSection').offset().top
-  let countUpFinished = false
+  var skillsTopOffset = $('.skillsSection').offset().top
+  var statsTopOffset = $('.statsSection').offset().top
+  var countUpFinished = false
 
   $(window).scroll(function() {
     if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
@@ -65,21 +65,40 @@ $(document).ready(() => {
       window.pageYOffset > statsTopOffset - $(window).height() + 200
     ) {
       $('.counter').each(function() {
-        let element = $(this)
-        let endVal = parseInt(element.text())
+        var element = $(this)
+        var endVal = parseInt(element.text())
         element.countup(endVal)
       })
       countUpFinished = true
     }
   })
 
-  $('[data-fancybox]').fancybox()
+  $('[data-fancybox]').fancybox()
 
   $('.items').isotope({
     filter: '*',
     animationOptions: {
       duration: 1500,
-      easing: 'linear'
+      easing: 'linear',
+      queue: false
     }
+  })
+
+  $('#filters a').click(function() {
+    $('#filters .current').removeClass('current')
+    $(this).addClass('current')
+
+    var selector = $(this).attr('data-filter')
+
+    $('.items').isotope({
+      filter: selector,
+      animationOptions: {
+        duration: 1500,
+        easing: 'linear',
+        queue: false
+      }
+    })
+
+    return false
   })
 })

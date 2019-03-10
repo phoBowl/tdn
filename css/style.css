@@ -213,6 +213,12 @@ body {
 
 .items li img {
   width: 100%;
+
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-trasform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -transform: scale(1.05, 1.05);
 }
 
 .items .item {
@@ -282,10 +288,22 @@ body {
   right: -200px;
 }
 
+/* Fly in - fly out button on the projects  */
 .items .item:hover .openButton {
   left: 0px;
 }
 
 .items .item:hover .projectLink {
   right: 0px;
+}
+
+.items .item:hover img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-trasform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -transform: scale(1.05, 1.05);
+}
+.items {
+  padding: 0;
 }
