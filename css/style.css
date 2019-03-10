@@ -307,3 +307,42 @@ body {
 .items {
   padding: 0;
 }
+
+#copyrightSection {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px 5px;
+}
+
+#copyrightSection p {
+  margin: 0;
+}
+
+#navigation {
+  background-color: #eb4d4b;
+  padding: 20px 10px;
+  z-index: 100;
+}
+
+#navigation li {
+  padding: 0 10px;
+}
+
+#navigation li a {
+  color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  background: url(../img/icons/menu.png);
+  background-size: 100%;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
