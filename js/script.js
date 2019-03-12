@@ -37,6 +37,8 @@ $(document).ready(function() {
     loop: true,
     // margin: 10,
     // nav: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
     items: 4,
     responsive: {
       0: {
